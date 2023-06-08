@@ -1,0 +1,8 @@
+name: SpeedChanger
+version: '${project.version}'
+main: de.tamion.SpeedChanger
+authors: [Tamion]
+description: Allows you to change the Movement Speed
+
+commands:
+  speed:
