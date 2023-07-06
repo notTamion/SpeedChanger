@@ -8,5 +8,7 @@ public final class SpeedChanger extends JavaPlugin {
     @Override
     public void onEnable() {
         getCommand("speed").setExecutor(new Speed());
+
+        Metrics metrics = new Metrics(this, 19001);
     }
 }
