@@ -10,6 +10,10 @@ import org.jetbrains.annotations.NotNull;
 public class Speed implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String label, @NotNull String[] args) {
+        if(!sender.hasPermission("SpeedChanger.speed")) {
+            sender.sendMessage("You aren't allowed to execute this command");
+            return false;
+        }
         Player t;
         try {
             if(sender instanceof Player) {
